@@ -37,8 +37,8 @@ A classic 2048 puzzle game implementation built with vanilla JavaScript, HTML5, 
 
 ### File Structure
 ```
-2048-game/
-├── index.html          # Main HTML structure
+2048/
+├── 2048.html          # Main HTML structure
 ├── 2048.css           # Styling and animations
 ├── 2048.js            # Game logic and mechanics
 └── README.md          # This documentation

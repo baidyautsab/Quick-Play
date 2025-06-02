@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.game-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    max-width: 95%;
+    max-height: 90vh;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-container {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.score-container h2, .score-container h3 {
+    font-size: 1.2rem;
+    margin: 0.2rem 0;
+}
+
+#gameCanvas {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 0.5rem 0;
+    max-width: 100%;
+    max-height: 60vh;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#startBtn {
+    padding: 0.6rem 1.5rem;
+    font-size: 1.1rem;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+#startBtn:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+.mobile-controls {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.horizontal-controls {
+    display: flex;
+    gap: 1rem;
+}
+
+.mobile-controls button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.mobile-controls button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    .mobile-controls {
+        display: flex;
+    }
+    
+    .game-container {
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+}
+
+.footer {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+} 
